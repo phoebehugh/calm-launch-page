@@ -1510,9 +1510,9 @@
 	margin: 0 auto 3em;
 }
 
-form #submitEmailInput {
+#mc_embed_signup_scroll #mce-EMAIL {
 	display: inline-block;
-	font: inherit;
+	line-height: 1.25em;
 	color: inherit;
 	background: #fff;
 	text-decoration: none;
@@ -1523,8 +1523,41 @@ form #submitEmailInput {
 	width: 300px;
 	color: #3d3d3d;
 	margin: 0 0.5em 0 0;
+	border: 1px solid #fff;
 }
 
-.button {
+#mc-embedded-subscribe {
 	color: #8ecf9b !important;
+	line-height: 1.25em;
+}
+
+@media only screen and (max-width : 580px) {
+	h3 {
+		font-size: 1.5em;
+	}
+	
+	#mc_embed_signup_scroll #mce-EMAIL {
+		margin: 0 0 0.5em 0 !important;
+	}
+	
+	#mc-embedded-subscribe {
+		width: 300px !important;
+		display: inline-block !important;
+	}
+}
+
+@media only screen and (max-width : 350px) {
+	h3 {
+		font-size: 1.5em;
+	}
+	
+	#mc_embed_signup_scroll #mce-EMAIL {
+		margin: 0 0 0.5em 0 !important;
+		width: 200px;
+	}
+	
+	#mc-embedded-subscribe {
+		width: 200px !important;
+		display: inline-block !important;
+	}
 }
