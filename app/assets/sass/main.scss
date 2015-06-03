@@ -91,8 +91,10 @@
 	}
 
 	h3 {
-		font-size: 1.5em;
-		line-height: 1.5em;
+		font-size: 2em;
+		line-height: 1.25em;
+		font-weight: 400;
+		color: #fff;
 	}
 
 	a {
@@ -179,10 +181,10 @@
 
 		> p {
 			display: block;
-			color: #f35858;
-			padding: 0.75em 0 1em 0;
-			font-size: 1.5em;
-			line-height: 1.5em;
+			color: #fff;
+			padding: 1em 0 1em 0;
+			font-size: 1.3em;
+			line-height: 1.3em;
 		}
 
 		&.major {
@@ -440,7 +442,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #f35858;
+			color: #fff !important;
 			border-color: rgba(243, 88, 88, 0.5);
 		}
 	}
@@ -503,12 +505,13 @@
 	#header-wrapper {
 		position: relative;
 		padding: 4em 0 2em 0;
-		background-image: url('images/header.svg');
-		@include vendor('background-image', ('url("images/overlay.png")', 'url("images/header.svg")', 'linear-gradient(75deg, #FF7088 15%, #F2B69D 55%)'));
-		background-color: #f08c89;
-		background-size: 100% 620%;
-		background-size: 128px 128px, 100% 620%, auto;
-		background-repeat: repeat, no-repeat, no-repeat;
+//		background-image: url('images/header.svg');
+		background: #a8e2b1;
+		box-sizing: border-box;
+		min-height: 100vh;
+//		background-size: 100% 620%;
+//		background-size: 128px 128px, 100% 620%, auto;
+//		background-repeat: repeat, no-repeat, no-repeat;
 	}
 
 	.homepage #header-wrapper {
@@ -1493,3 +1496,35 @@
 			}
 
 	}
+
+
+
+// CALM STYLES
+
+
+#calmLogo {
+	background: url(../../images/calm_logo.svg);
+	background-size: 100%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 3em;
+}
+
+form #submitEmailInput {
+	display: inline-block;
+	font: inherit;
+	color: inherit;
+	background: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 0.35em;
+	font-size: 1.25em;
+	padding: 0.8em 1em;
+	width: 300px;
+	color: #3d3d3d;
+	margin: 0 0.5em 0 0;
+}
+
+.button {
+	color: #8ecf9b !important;
+}
