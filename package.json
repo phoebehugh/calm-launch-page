@@ -3,15 +3,33 @@
   "version": "0.1.0",
   "description": "praxis-kley",
   "scripts": {
- #   "start:less": "lessc dev/_less/main.less > dev/css/main.css",
- #   "watch:less": "watch 'npm run start:less' dev/_less/",
+    "start:less": "lessc dev/_less/main.less > dev/css/main.css",
+    "watch:less": "watch 'npm run start:less' dev/_less/",
     "prestart": "npm install",
     "start": "npm run start:css"
   },
   "devDependencies": {
- 		"less": "latest",
-		"node-sass": "latest",
+    "less": "latest",
+    "node-sass": "latest",
     "parallelshell": "latest",
     "watch": "latest"
-  }
+  },
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "less": "^2.5.1",
+    "node-sass": "^3.1.2",
+    "parallelshell": "^1.1.1",
+    "watch": "^0.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoebehugh/calm-launch-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoebehugh/calm-launch-page/issues"
+  },
+  "homepage": "https://github.com/phoebehugh/calm-launch-page#readme"
 }
