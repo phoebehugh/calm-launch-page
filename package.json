@@ -10,6 +10,9 @@
     "watch": "^0.16.0",
     "less": "^2.5.1"
   },
+  "domains": [
+    "getcalmapp.com"
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-sass": "^0.9.2",

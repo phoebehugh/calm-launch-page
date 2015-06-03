@@ -1,7 +1,14 @@
-// var http = require("http");
+var express = require('express');
+var port = process.env.PORT || 3000;
+var app = express();
 
-// http.createServer(function(request, response) {
-//   response.writeHead(200, {"Content-Type": "text/plain"});
-//   response.write("Hello World");
-//   response.end();
-// }).listen(8888);
+var http = require("http");
+    server = http.createServer(app)
+
+app.get('/', function(req, res) {
+  res.sendfile('app/index.html');
+});
+
+server.listen(port, function() {
+  console.log('Calm is on port 3000');
+});
