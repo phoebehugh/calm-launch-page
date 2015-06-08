@@ -1,0 +1,14 @@
+@import "compass/reset";
+@import "components/general/variables";
+@import "components/general/type";
+
+@import "components/hero";
+
+// main styles
+
+body {
+	font-family: $base-font-family;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
