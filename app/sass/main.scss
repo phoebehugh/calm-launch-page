@@ -1,15 +1,27 @@
+// reset + mixins
+
 @import "compass/reset";
 @import "compass/css3";
+
+// general styles
 
 @import "components/general/variables";
 @import "components/general/type";
 @import "components/general/forms";
 
+// components
 
-@import "components/hero";
 @import "components/mailing-list";
 
+// sections
+
+@import "components/hero";
+@import "components/explanation";
+@import "components/product-preview";
+@import "components/footer";
+
 // main styles
+// -----------
 
 body {
 	font-family: $base-font-family;
@@ -21,4 +33,27 @@ body {
 
 section {
 	@include box-sizing(border-box);
+	background: $section-background;
+	color: $gray;
+}
+
+
+// extensions
+// ----------
+
+.two-col {
+	padding: 25px 15%;
+}
+
+.two-col-flex {
+	@include display-flex;
+	justify-content: space-between;	
+	align-items: center;
+}
+
+.white-on-green {
+	background: $green;
+	color: $white;
+	text-align: center;
+	padding: 50px 0 50px;
 }

@@ -3,28 +3,19 @@
 $hero-logo-height: 	230px;
 
 #hero {
-	background: $green;
-	color: $white;
-	text-align: center;
-	padding: 50px 0 50px;
+	@extend .white-on-green;
 	border-bottom: 2px solid shade($green,10%);
 }
 
 #hero-logo {
 	height: $hero-logo-height;
 	width: 100%;
-	background: url('../images/hero-logo.svg') no-repeat;
+	background: $hero-logo-path;
 	background-size: auto $hero-logo-height;
 	background-position: center;
 }
 
 #hero-head {
 	padding: 50px 50px 0;
-}
-
-#hero-mailing-list {
-	p {
-		padding: 60px 0 30px;
-	}
 }
 

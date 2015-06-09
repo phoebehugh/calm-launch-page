@@ -73,13 +73,18 @@ p {
 h1, h2, h3 {
   margin: 0;
   padding: 0;
-}
-
-/* line 14, ../sass/components/general/_type.scss */
-h1 {
-  font-size: 30px;
   font-weight: 200;
   line-height: 1.3;
+}
+
+/* line 17, ../sass/components/general/_type.scss */
+h1 {
+  font-size: 30px;
+}
+
+/* line 21, ../sass/components/general/_type.scss */
+h2 {
+  font-size: 25px;
 }
 
 /* line 4, ../sass/components/general/_forms.scss */
@@ -96,7 +101,7 @@ input, input [type="text"], input [type="email"], button {
   font-weight: 600;
   text-transform: uppercase;
   box-shadow: none;
-  color: #999;
+  color: #888;
 }
 
 /* line 18, ../sass/components/general/_forms.scss */
@@ -118,45 +123,22 @@ button:active {
   background: rgba(255, 255, 255, 0.6);
 }
 
-/* line 5, ../sass/components/_hero.scss */
-#hero {
-  background: #8ecf9b;
-  color: #fff;
-  text-align: center;
-  padding: 50px 0 50px;
-  border-bottom: 2px solid #80ba8c;
-}
-
-/* line 13, ../sass/components/_hero.scss */
-#hero-logo {
-  height: 230px;
-  width: 100%;
-  background: url("../images/hero-logo.svg") no-repeat;
-  background-size: auto 230px;
-  background-position: center;
-}
-
-/* line 21, ../sass/components/_hero.scss */
-#hero-head {
-  padding: 50px 50px 0;
-}
-
-/* line 26, ../sass/components/_hero.scss */
-#hero-mailing-list p {
+/* line 5, ../sass/components/_mailing-list.scss */
+.mailing-list p {
   padding: 60px 0 30px;
 }
 
-/* line 3, ../sass/components/_mailing-list.scss */
+/* line 10, ../sass/components/_mailing-list.scss */
 .mailing-list-input-container {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
 }
-/* line 7, ../sass/components/_mailing-list.scss */
+/* line 14, ../sass/components/_mailing-list.scss */
 .mailing-list-input-container input {
   z-index: 2;
 }
-/* line 11, ../sass/components/_mailing-list.scss */
+/* line 18, ../sass/components/_mailing-list.scss */
 .mailing-list-input-container button {
   z-index: 1;
   margin-left: -8px;
@@ -165,7 +147,88 @@ button:active {
   border-bottom-left-radius: 0;
 }
 
-/* line 14, ../sass/main.scss */
+/* line 5, ../sass/components/_hero.scss */
+#hero {
+  border-bottom: 2px solid #80ba8c;
+}
+
+/* line 10, ../sass/components/_hero.scss */
+#hero-logo {
+  height: 230px;
+  width: 100%;
+  background: url("../images/hero-logo.svg") no-repeat;
+  background-size: auto 230px;
+  background-position: center;
+}
+
+/* line 18, ../sass/components/_hero.scss */
+#hero-head {
+  padding: 50px 50px 0;
+}
+
+/* line 23, ../sass/components/_hero.scss */
+#hero-mailing-list p {
+  padding: 60px 0 30px;
+}
+
+/* line 6, ../sass/components/_explanation.scss */
+.explanation article {
+  padding: 25px 0;
+  position: relative;
+}
+
+/* line 13, ../sass/components/_explanation.scss */
+.explanation-image-container {
+  width: 100%;
+  height: 0;
+  background-size: contain;
+}
+
+/* line 21, ../sass/components/_explanation.scss */
+#explanation-detection-visual {
+  width: 35%;
+  position: relative;
+}
+/* line 25, ../sass/components/_explanation.scss */
+#explanation-detection-visual .explanation-image-container {
+  background: url("../images/graph.svg") no-repeat;
+  padding-top: 112.0%;
+}
+
+/* line 32, ../sass/components/_explanation.scss */
+#explanation-detection-text {
+  width: 55%;
+}
+
+/* line 38, ../sass/components/_explanation.scss */
+#explanation-notification-visual {
+  width: 35%;
+  position: relative;
+}
+/* line 42, ../sass/components/_explanation.scss */
+#explanation-notification-visual .explanation-image-container {
+  background: url("../images/notification.svg") no-repeat;
+  padding-top: 110.36036%;
+}
+
+/* line 48, ../sass/components/_explanation.scss */
+#explanation-notification-text {
+  width: 55%;
+}
+
+/* line 3, ../sass/components/_product-preview.scss */
+#product-preview {
+  background: #fff;
+  border-top: 2px solid #dde5da;
+  border-bottom: 2px solid #dde5da;
+}
+
+/* line 3, ../sass/components/_footer.scss */
+#footer {
+  border-top: 2px solid #80ba8c;
+}
+
+/* line 26, ../sass/main.scss */
 body {
   font-family: "San Francisco Text", sans-serif;
   font-weight: 200;
@@ -174,9 +237,32 @@ body {
   padding: 0;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background: #f8fdf7;
+  color: #888;
+}
+
+/* line 44, ../sass/main.scss */
+.two-col, .explanation, #product-preview {
+  padding: 25px 15%;
+}
+
+/* line 48, ../sass/main.scss */
+.two-col-flex, .explanation article {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 54, ../sass/main.scss */
+.white-on-green, #hero, #footer {
+  background: #8ecf9b;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0 50px;
 }
