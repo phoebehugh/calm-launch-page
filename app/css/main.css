@@ -118,15 +118,30 @@ button:active {
   background: rgba(255, 255, 255, 0.6);
 }
 
-/* line 3, ../sass/components/_hero.scss */
+/* line 5, ../sass/components/_hero.scss */
 #hero {
-  padding: 50px;
   background: #8ecf9b;
   color: #fff;
   text-align: center;
+  padding: 50px 0 50px;
+  border-bottom: 2px solid #80ba8c;
 }
 
-/* line 12, ../sass/components/_hero.scss */
+/* line 13, ../sass/components/_hero.scss */
+#hero-logo {
+  height: 230px;
+  width: 100%;
+  background: url("../images/hero-logo.svg") no-repeat;
+  background-size: auto 230px;
+  background-position: center;
+}
+
+/* line 21, ../sass/components/_hero.scss */
+#hero-head {
+  padding: 50px 50px 0;
+}
+
+/* line 26, ../sass/components/_hero.scss */
 #hero-mailing-list p {
   padding: 60px 0 30px;
 }

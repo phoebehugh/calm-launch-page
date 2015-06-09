@@ -1,11 +1,25 @@
 // hero section
 
+$hero-logo-height: 	230px;
+
 #hero {
-//	height: 100vh;
-	padding: 50px;
 	background: $green;
 	color: $white;
 	text-align: center;
+	padding: 50px 0 50px;
+	border-bottom: 2px solid shade($green,10%);
+}
+
+#hero-logo {
+	height: $hero-logo-height;
+	width: 100%;
+	background: url('../images/hero-logo.svg') no-repeat;
+	background-size: auto $hero-logo-height;
+	background-position: center;
+}
+
+#hero-head {
+	padding: 50px 50px 0;
 }
 
 #hero-mailing-list {
