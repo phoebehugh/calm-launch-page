@@ -18,4 +18,14 @@ input, input [type="text"], input [type="email"], button {
 button {
 	background: rgba(255,255,255,0.5);
 	color: $green-dark;
+	cursor: pointer;
+	@include transition(width, 0.2s, linear);
+	
+	&:hover {
+		background: rgba(255,255,255,0.55);
+	}
+	
+	&:active {
+		background: rgba(255,255,255,0.6);
+	}
 }

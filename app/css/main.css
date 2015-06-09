@@ -103,6 +103,19 @@ input, input [type="text"], input [type="email"], button {
 button {
   background: rgba(255, 255, 255, 0.5);
   color: #51935b;
+  cursor: pointer;
+  -moz-transition: width, 0.2s, linear;
+  -o-transition: width, 0.2s, linear;
+  -webkit-transition: width, 0.2s, linear;
+  transition: width, 0.2s, linear;
+}
+/* line 24, ../sass/components/general/_forms.scss */
+button:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+/* line 28, ../sass/components/general/_forms.scss */
+button:active {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 /* line 3, ../sass/components/_hero.scss */
