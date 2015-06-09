@@ -9,6 +9,9 @@ app.get('/', function(req, res) {
   res.sendfile('app/index.html');
 });
 
+app.use(express.static(__dirname + '/app'));
+
 server.listen(port, function() {
   console.log('Calm is on port 3000');
 });
+
