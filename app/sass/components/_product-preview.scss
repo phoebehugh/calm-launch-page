@@ -1,0 +1,33 @@
+// product preview section
+
+#product-preview {
+	background: $white;
+	border-top: 2px solid $section-border-color;
+	border-bottom: 2px solid $section-border-color;
+	@extend .two-col;
+
+	color: $green;
+}
+
+#product-preview-container {
+	@extend .two-col-flex;
+	padding: 25px 0;
+	position: relative;	
+}
+
+#product-preview-visual {
+	width: 35%;	
+	position: relative;
+}
+
+#product-preview-image-container {
+	width: 100%;
+	height: 0;
+	background-size: contain;
+	background: $product-preview-visual-path;
+	padding-top: percentage(1306 / 725);
+}
+
+#product-preview-text {
+	width: 55%;
+}

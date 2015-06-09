@@ -166,11 +166,6 @@ button:active {
   padding: 50px 50px 0;
 }
 
-/* line 23, ../sass/components/_hero.scss */
-#hero-mailing-list p {
-  padding: 60px 0 30px;
-}
-
 /* line 6, ../sass/components/_explanation.scss */
 .explanation article {
   padding: 25px 0;
@@ -181,7 +176,7 @@ button:active {
 .explanation-image-container {
   width: 100%;
   height: 0;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 /* line 21, ../sass/components/_explanation.scss */
@@ -216,11 +211,70 @@ button:active {
   width: 55%;
 }
 
+/* line 54, ../sass/components/_explanation.scss */
+#explanation-technique-visual {
+  width: 35%;
+  position: relative;
+}
+/* line 58, ../sass/components/_explanation.scss */
+#explanation-technique-visual .explanation-image-container {
+  background: url("../images/478.svg") no-repeat;
+  padding-top: 50.25641%;
+}
+
+/* line 65, ../sass/components/_explanation.scss */
+#explanation-technique-text {
+  width: 55%;
+}
+
+/* line 71, ../sass/components/_explanation.scss */
+#explanation-blob-visual {
+  width: 35%;
+  position: relative;
+}
+/* line 75, ../sass/components/_explanation.scss */
+#explanation-blob-visual .explanation-image-container {
+  background: url("../images/blob.gif") no-repeat;
+  padding-top: 89.74359%;
+}
+
+/* line 82, ../sass/components/_explanation.scss */
+#explanation-blob-text {
+  width: 55%;
+}
+
 /* line 3, ../sass/components/_product-preview.scss */
 #product-preview {
   background: #fff;
   border-top: 2px solid #dde5da;
   border-bottom: 2px solid #dde5da;
+  color: #8ecf9b;
+}
+
+/* line 12, ../sass/components/_product-preview.scss */
+#product-preview-container {
+  padding: 25px 0;
+  position: relative;
+}
+
+/* line 18, ../sass/components/_product-preview.scss */
+#product-preview-visual {
+  width: 35%;
+  position: relative;
+}
+
+/* line 23, ../sass/components/_product-preview.scss */
+#product-preview-image-container {
+  width: 100%;
+  height: 0;
+  background-size: contain;
+  background: url("../images/watch.svg") no-repeat;
+  padding-top: 180.13793%;
+}
+
+/* line 31, ../sass/components/_product-preview.scss */
+#product-preview-text {
+  width: 55%;
 }
 
 /* line 3, ../sass/components/_footer.scss */
@@ -252,7 +306,7 @@ section {
 }
 
 /* line 48, ../sass/main.scss */
-.two-col-flex, .explanation article {
+.two-col-flex, .explanation article, #product-preview-container {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;

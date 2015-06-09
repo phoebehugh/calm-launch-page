@@ -1,0 +1,84 @@
+// explanation sections
+
+.explanation {
+	@extend .two-col;
+	
+	article {
+		@extend .two-col-flex;
+		padding: 25px 0;
+		position: relative;
+	}
+}
+
+.explanation-image-container {
+	width: 100%;
+	height: 0;
+	background-size: contain !important;
+}
+
+// detection article
+
+#explanation-detection-visual {
+	width: 35%;	
+	position: relative;
+	
+	.explanation-image-container {
+		background: $explanation-detection-visual-path;
+		padding-top: percentage(840 / 750);
+	}
+	
+}
+
+#explanation-detection-text {
+	width: 55%;
+}
+
+// notification article
+
+#explanation-notification-visual {
+	width: 35%;	
+	position: relative;
+	
+	.explanation-image-container {
+		background: $explanation-notification-visual-path;
+		padding-top: percentage(245 / 222);
+	}
+}
+
+#explanation-notification-text {
+	width: 55%;
+}
+
+// technique article
+
+#explanation-technique-visual {
+	width: 35%;	
+	position: relative;
+	
+	.explanation-image-container {
+		background: $explanation-technique-visual-path;
+		padding-top: percentage(294 / 585);
+	}
+	
+}
+
+#explanation-technique-text {
+	width: 55%;
+}
+
+// blob article
+
+#explanation-blob-visual {
+	width: 35%;	
+	position: relative;
+	
+	.explanation-image-container {
+		background: $explanation-blob-visual-path;
+		padding-top: percentage(280 / 312);
+	}
+	
+}
+
+#explanation-blob-text {
+	width: 55%;
+}
