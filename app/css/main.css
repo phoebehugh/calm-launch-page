@@ -277,6 +277,15 @@ button:active {
   width: 55%;
 }
 
+/* line 35, ../sass/components/_product-preview.scss */
+#product-preview-video {
+  position: absolute;
+  top: 28%;
+  width: auto;
+  height: 45%;
+  left: 16.8%;
+}
+
 /* line 3, ../sass/components/_footer.scss */
 #footer {
   border-top: 2px solid #80ba8c;
