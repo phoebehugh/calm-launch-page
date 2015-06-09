@@ -19,7 +19,7 @@ button {
 	background: rgba(255,255,255,0.5);
 	color: $green-dark;
 	cursor: pointer;
-	@include transition(width, 0.2s, linear);
+	@include transition(all, 0.3s, ease);
 	
 	&:hover {
 		background: rgba(255,255,255,0.55);

@@ -17,10 +17,19 @@
 
 	button {
 		z-index: 1;
-		margin-left: -$form-border-radius;
+		margin-left: - ($form-border-radius + 100px);
+//		margin-left: -$form-border-radius;
 		padding-left: $form-padding + $form-border-radius;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
+		
+//		@include animate(margin-left .3s ease-in-out);
+	}
+	
+	&:hover {
+		button {
+			margin-left: -$form-border-radius;
+		}
 	}
 
 }

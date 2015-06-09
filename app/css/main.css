@@ -109,10 +109,10 @@ button {
   background: rgba(255, 255, 255, 0.5);
   color: #51935b;
   cursor: pointer;
-  -moz-transition: width, 0.2s, linear;
-  -o-transition: width, 0.2s, linear;
-  -webkit-transition: width, 0.2s, linear;
-  transition: width, 0.2s, linear;
+  -moz-transition: all, 0.3s, ease;
+  -o-transition: all, 0.3s, ease;
+  -webkit-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease;
 }
 /* line 24, ../sass/components/general/_forms.scss */
 button:hover {
@@ -141,10 +141,14 @@ button:active {
 /* line 18, ../sass/components/_mailing-list.scss */
 .mailing-list-input-container button {
   z-index: 1;
-  margin-left: -8px;
+  margin-left: -108px;
   padding-left: 24px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+/* line 30, ../sass/components/_mailing-list.scss */
+.mailing-list-input-container:hover button {
+  margin-left: -8px;
 }
 
 /* line 5, ../sass/components/_hero.scss */
