@@ -1,0 +1,21 @@
+$form-padding: 				16px;
+$form-border-radius:	8px;
+
+input, input [type="text"], input [type="email"], button {
+	position: relative;
+	background: $white;
+	border: none;
+	outline: none;
+	@include border-radius($form-border-radius);
+	padding: $form-padding;
+	font-size: $small-font-size;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-shadow: none;
+	color: $gray;
+} 
+
+button {
+	background: rgba(255,255,255,0.5);
+	color: $green-dark;
+}

@@ -2,7 +2,17 @@
 
 @import url("http://nicholastodor.com/sf/usesf.css");
 
+p {
+	font-size: $base-font-size;
+}
+
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 200;
+	line-height: 1.3;
 }

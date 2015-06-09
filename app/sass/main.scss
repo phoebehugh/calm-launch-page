@@ -1,14 +1,24 @@
 @import "compass/reset";
+@import "compass/css3";
+
 @import "components/general/variables";
 @import "components/general/type";
+@import "components/general/forms";
+
 
 @import "components/hero";
+@import "components/mailing-list";
 
 // main styles
 
 body {
 	font-family: $base-font-family;
+	font-weight: 200;
 	background: #fff;
 	margin: 0;
 	padding: 0;
+}
+
+section {
+	@include box-sizing(border-box);
 }
