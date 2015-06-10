@@ -147,7 +147,7 @@ button:active {
   border-bottom-left-radius: 0;
 }
 /* line 30, ../sass/components/_mailing-list.scss */
-.mailing-list-input-container:hover button {
+.mailing-list-input-container.has-submit-button button {
   margin-left: -8px;
 }
 
@@ -293,6 +293,10 @@ button:active {
 /* line 3, ../sass/components/_footer.scss */
 #footer {
   border-top: 2px solid #80ba8c;
+}
+/* line 7, ../sass/components/_footer.scss */
+#footer h2 {
+  margin: 0 50px;
 }
 
 /* line 26, ../sass/main.scss */

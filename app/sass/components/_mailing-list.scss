@@ -26,11 +26,9 @@
 //		@include animate(margin-left .3s ease-in-out);
 	}
 	
-	&:hover {
+	&.has-submit-button {
 		button {
 			margin-left: -$form-border-radius;
 		}
 	}
-
 }
-

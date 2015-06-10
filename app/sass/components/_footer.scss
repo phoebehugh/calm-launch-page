@@ -3,4 +3,8 @@
 #footer {
 	@extend .white-on-green;
 	border-top: 2px solid shade($green,10%);
+	
+	h2 {
+		margin: 0 50px;
+	}
 }
