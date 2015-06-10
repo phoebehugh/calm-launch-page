@@ -8,3 +8,52 @@
 		margin: 0 50px;
 	}
 }
+
+#social-links {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	
+	> a {
+		width: 40px;
+		height: 40px;
+		margin: 0 5px;
+		opacity: 0.5;
+		text-decoration: none;
+		@include transition(opacity 0.2s ease);
+		
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+#soon-for-applewatch {
+	position: relative;
+	padding: 20px 0 0;
+	font-weight: 400;
+}
+
+#apple-watch {
+	background: $apple-watch-link;
+	height: 19px;
+	width: 88px;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+#instagram-link {
+	background: $instagram-logo-link;
+}
+
+#facebook-link {
+	background: $facebook-logo-link;
+}
+
+#twitter-link {
+	background: $twitter-logo-link;
+}
+
+#mail-link {
+	background: $mail-logo-link;
+}
