@@ -115,7 +115,7 @@ button {
   transition: all, 0.3s, ease;
 }
 /* line 24, ../sass/components/general/_forms.scss */
-button:hover {
+button:focus {
   background: rgba(255, 255, 255, 0.55);
 }
 /* line 28, ../sass/components/general/_forms.scss */
