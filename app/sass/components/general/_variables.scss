@@ -19,6 +19,11 @@ $base-font-family: 'San Francisco Text', sans-serif;
 $base-font-size: 18px;
 $small-font-size: 14px;
 
+// breakpoints
+
+$break-mobile: 480px;
+$break-tablet: 720px;
+
 // links
 
 $hero-logo-path: url('../images/hero-logo.svg') no-repeat;

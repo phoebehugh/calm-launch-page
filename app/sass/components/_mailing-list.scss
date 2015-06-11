@@ -3,13 +3,13 @@
 
 .mailing-list {
 	p {
-		padding: 60px 0 30px;
+		padding: 60px 25px 30px;
 	}
 }
 
 .mailing-list-input-container {
 	@include display-flex;
-	justify-content: center;
+	@include justify-content(center);
 	
 	input {
 		z-index: 2;
@@ -29,6 +29,33 @@
 	&.has-submit-button {
 		button {
 			margin-left: -$form-border-radius;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-mobile) {
+	.mailing-list-input-container {
+		@include flex-direction(column);
+		width: 200px;
+		margin: 0 auto;
+		
+		button {
+			margin: 0;
+			margin-top: - ($form-border-radius + 10px);
+			padding-left: $form-padding;
+			padding-top: 0;
+			border-radius: $form-border-radius;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+
+		}
+	
+		&.has-submit-button {
+			button {
+				margin: 0;
+				padding-top: $form-padding + $form-border-radius;
+				margin-top: -$form-border-radius;
+			}
 		}
 	}
 }

@@ -1,6 +1,7 @@
 // hero section
 
 $hero-logo-height: 	230px;
+$hero-logo-height-1600: 640px;
 
 #hero {
 	@extend .white-on-green;
@@ -14,8 +15,19 @@ $hero-logo-height: 	230px;
 	background-size: auto $hero-logo-height;
 	background-position: center;
 }
+//
+//@media only screen and (min-width: 1500px) {
+//	#hero-logo {
+//		height: $hero-logo-height-1600;
+//		background-size: auto $hero-logo-height-1600;
+//	}
+//}
 
 #hero-head {
 	padding: 50px 50px 0;
+	
+	@media only screen and (max-width: $break-mobile) {
+			padding: 50px 25px 0;
+		}
 }
 

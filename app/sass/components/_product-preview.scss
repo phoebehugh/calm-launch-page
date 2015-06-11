@@ -15,21 +15,12 @@
 	position: relative;	
 }
 
-#product-preview-visual {
-	width: 35%;	
-	position: relative;
-}
-
 #product-preview-image-container {
 	width: 100%;
 	height: 0;
 	background-size: contain;
 	background: $product-preview-visual-path;
 	padding-top: percentage(1306 / 725);
-}
-
-#product-preview-text {
-	width: 55%;
 }
 
 #product-preview-video {
