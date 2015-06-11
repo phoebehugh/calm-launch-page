@@ -47,7 +47,13 @@
 			border-radius: $form-border-radius;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
-
+			width: 100%;
+			@include box-sizing(border-box);
+		}
+		
+		input {
+			width: 100%;
+			@include box-sizing(border-box);
 		}
 	
 		&.has-submit-button {

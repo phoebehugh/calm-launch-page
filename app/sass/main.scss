@@ -36,6 +36,7 @@ p {
 }
 
 section {
+	position: relative;
 	@include box-sizing(border-box);
 	background: $section-background;
 	color: $gray;
@@ -47,6 +48,10 @@ section {
 
 .two-col {
 	padding: 25px 15%;
+	
+	@media only screen and (max-width: $break-one-column) {
+		padding: 50px;
+	}
 	
 	@media only screen and (max-width: $break-mobile) {
 		padding: 25px;
@@ -69,10 +74,11 @@ section {
 	}
 }
 
-@media only screen and (max-width: $break-mobile) {
+@media only screen and (max-width: $break-one-column) {
 	
 	.two-col-flex {
 		@include flex-direction(column);
+		text-align: center;
 
 		> div, > h1, > h2 {
 			width: 100%;
@@ -81,7 +87,17 @@ section {
 		> div {
 			@include order(-1);
 			margin: 25px auto 50px;
-//			width: 70%;
+			width: 50%;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-mobile) {
+	.two-col-flex {
+		text-align: left;
+		
+		> div {
+			width: 100%;
 		}
 	}
 }
