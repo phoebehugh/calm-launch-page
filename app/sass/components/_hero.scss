@@ -27,7 +27,11 @@ $hero-logo-height-1600: 640px;
 	padding: 50px 50px 0;
 	
 	@media only screen and (max-width: $break-mobile) {
-			padding: 50px 25px 0;
-		}
+		padding: 50px 25px 0;
+	}
+	
+	@media only screen and (min-width: $break-desktop) {
+		padding: 50px 15% 0;
+	}
 }
 
