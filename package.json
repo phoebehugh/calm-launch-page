@@ -8,7 +8,7 @@
     "node-sass": "^3.1.2",
     "parallelshell": "^1.1.1",
     "watch": "^0.16.0",
-    "less": "^2.5.1"
+    "bowser": "x.x.x"
   },
   "domains": [
     "getcalmapp.com"
